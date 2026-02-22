@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Riska Agus — Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&family=Italiana&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="cursor"></div>
+<div id="cursor-ring"></div>
+
+<!-- ════ NAV ════ -->
+<nav>
+  <a href="#" class="nav-logo" onclick="showPage('about')">Riska<span>.</span></a>
+  <ul class="nav-links">
+    <li><a href="#" onclick="showPage('about')" class="active" id="nav-about">About</a></li>
+    <li><a href="#" onclick="showPage('projects')" id="nav-projects">Projects</a></li>
+    <li><a href="#" onclick="showPage('sertifikat')" id="nav-sertifikat">Sertifikat</a></li>
+    <li><a href="#" onclick="showPage('kontak')" id="nav-kontak">Kontak</a></li>
+  </ul>
+</nav>
+
+<!-- ════════════════════════════════════════ -->
+<!--  PAGE: ABOUT                            -->
+<!-- ════════════════════════════════════════ -->
+<div id="page-about" class="page active">
+
+  <!-- HERO -->
+  <div class="hero-split">
+    <div class="hero-intro">
+      <div class="overline">Telecommunications Engineering Student</div>
+      <h1 class="display-title">
+        Halo, I'm<br>
+        <em>Riska Agus</em>
+      </h1>
+      <p class="hero-bio">
+        Undergraduate student at Telkom University Bandung dengan passion di Optical Communication Systems, Machine Learning, dan Biomedical Signal Processing. Exploring the intersection of technology and meaningful impact.
+      </p>
+      <div class="hero-chips">
+        <span class="chip">🔭 Signal Processing</span>
+        <span class="chip">🤖 Machine Learning</span>
+        <span class="chip">🌐 FTTH Networks</span>
+        <span class="chip">⚡ IoT Systems</span>
+        <span class="chip">🧬 Biomedical Engineering</span>
+      </div>
+      <div class="hero-btns">
+        <a href="#" onclick="showPage('projects')" class="btn btn-rose">View Projects ↗</a>
+        <a href="harshibar_s_resume.pdf" class="btn btn-outline" download>Download CV</a>
+      </div>
+    </div>
+
+    <div class="photo-frame">
+      <div class="frame-deco"></div>
+      <div class="frame-ring"></div>
+      <img src="ikaaaaa.png" alt="Riska Agus"
+           onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+      <div style="display:none; width:82%; height:420px; border-radius:24px; background:linear-gradient(135deg,#1c1028,#2d1838); align-items:center; justify-content:center; flex-direction:column; gap:12px; position:relative;">
+        <div style="font-size:64px">🌸</div>
+        <div style="font-size:13px;color:var(--muted);letter-spacing:.1em">Riska Agus</div>
+      </div>
+      <div class="photo-tag">
+        <strong>Telkom University</strong>
+        S1 Teknik Telekomunikasi · 2022
+      </div>
+    </div>
+  </div>
+
+  <!-- STATS -->
+  <div class="wrap">
+    <div class="about-stats reveal">
+      <div class="about-stat">
+        <div class="num">3+</div>
+        <div class="lbl">Paper Accepted</div>
+        <div class="sub">Gen-City 2025 & ISIBER 2026</div>
+      </div>
+      <div class="about-stat">
+        <div class="num">2+</div>
+        <div class="lbl">Internships</div>
+        <div class="sub">Telkom Test House (TTH)</div>
+      </div>
+      <div class="about-stat">
+        <div class="num">2+</div>
+        <div class="lbl">Laboratories</div>
+        <div class="sub">Optical & Signal Processing</div>
+      </div>
+      <div class="about-stat">
+        <div class="num">3.27</div>
+        <div class="lbl">GPA</div>
+        <div class="sub">Telkom University</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- EDUCATION + EXPERIENCE -->
+  <div class="wrap section">
+    <div class="section-title reveal">Pendidikan &amp; <em>Pengalaman</em></div>
+    <div class="divider"></div>
+
+    <div class="two-col">
+      <div class="reveal">
+        <div class="col-title">Education</div>
+
+        <div class="tl-item">
+          <div class="tl-year">2022 — Present</div>
+          <div class="tl-title">S1 Teknik Telekomunikasi</div>
+          <div class="tl-org">Telkom University, Bandung</div>
+          <div class="tl-desc">GPA 3.27/4.0 — Fokus: Optical Communication, Signal Processing & Machine Learning.</div>
+        </div>
+
+        <div class="tl-item">
+          <div class="tl-year">2025 — Now</div>
+          <div class="tl-title">Research Assistant</div>
+          <div class="tl-org">Signal Processing for Intelligent System Lab — Telkom University</div>
+          <div class="tl-desc">Riset biomedical signal processing, publikasi ilmiah, dan tugas akhir fatigue detection berbasis HRV.</div>
+        </div>
+
+        <div class="tl-item">
+          <div class="tl-year">Jun 2024 — Jul 2025</div>
+          <div class="tl-title">Research Assistant</div>
+          <div class="tl-org">Optical Communication Laboratory — Telkom University</div>
+          <div class="tl-desc">FTTH topology design, OptiSystem simulation, OTDR testing & fusion splicing.</div>
+        </div>
+      </div>
+
+      <div class="reveal">
+        <div class="col-title">Experience</div>
+
+        <div class="tl-item">
+          <div class="tl-year">2025</div>
+          <div class="tl-title">Co-Founder & Full-Stack Developer</div>
+          <div class="tl-org">Motion-Us — Online Photobooth Startup</div>
+          <div class="tl-desc">Mengembangkan sistem web photobooth digital, branding, social media, dan strategi produk.</div>
+        </div>
+
+        <div class="tl-item">
+          <div class="tl-year">Jun — Aug 2025</div>
+          <div class="tl-title">Intern — Energy Laboratory</div>
+          <div class="tl-org">Telkom Test House (TTH)</div>
+          <div class="tl-desc">Otomasi reporting lab menggunakan Excel VBA, digitalisasi dokumentasi laboratorium.</div>
+        </div>
+
+        <div class="tl-item">
+          <div class="tl-year">Jan — Feb 2025</div>
+          <div class="tl-title">Intern — Optical Communication Lab</div>
+          <div class="tl-org">Telkom Test House (TTH)</div>
+          <div class="tl-desc">Analisis OSA, penyusunan IKA, dan presentasi teknologi WDM/DWDM standar ITU-T.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SKILLS -->
+  <div class="wrap section" style="padding-top:0">
+    <div class="section-title reveal">Keahlian &amp; <em>Tools</em></div>
+    <div class="divider"></div>
+    <div class="skills-grid">
+      <div class="skill-card reveal">
+        <div class="sk-icon">🔬</div>
+        <div class="sk-title">Signal Processing</div>
+        <div class="sk-tags">
+          <span class="sk-tag">MATLAB</span>
+          <span class="sk-tag">Python</span>
+          <span class="sk-tag">Biomedical</span>
+          <span class="sk-tag">HRV Analysis</span>
+        </div>
+      </div>
+      <div class="skill-card reveal">
+        <div class="sk-icon">🤖</div>
+        <div class="sk-title">Machine Learning</div>
+        <div class="sk-tags">
+          <span class="sk-tag">Scikit-learn</span>
+          <span class="sk-tag">TensorFlow</span>
+          <span class="sk-tag">SVM</span>
+          <span class="sk-tag">Classification</span>
+        </div>
+      </div>
+      <div class="skill-card reveal">
+        <div class="sk-icon">🌐</div>
+        <div class="sk-title">Optical Networks</div>
+        <div class="sk-tags">
+          <span class="sk-tag">OptiSystem</span>
+          <span class="sk-tag">FTTH Design</span>
+          <span class="sk-tag">OTDR</span>
+          <span class="sk-tag">WDM/DWDM</span>
+        </div>
+      </div>
+      <div class="skill-card reveal">
+        <div class="sk-icon">💻</div>
+        <div class="sk-title">Web Development</div>
+        <div class="sk-tags">
+          <span class="sk-tag">HTML/CSS/JS</span>
+          <span class="sk-tag">Python Flask</span>
+          <span class="sk-tag">Supabase</span>
+        </div>
+      </div>
+      <div class="skill-card reveal">
+        <div class="sk-icon">📊</div>
+        <div class="sk-title">Data & Automation</div>
+        <div class="sk-tags">
+          <span class="sk-tag">Excel VBA</span>
+          <span class="sk-tag">Pandas</span>
+          <span class="sk-tag">NumPy</span>
+          <span class="sk-tag">Data Viz</span>
+        </div>
+      </div>
+      <div class="skill-card reveal">
+        <div class="sk-icon">🎨</div>
+        <div class="sk-title">Design & Branding</div>
+        <div class="sk-tags">
+          <span class="sk-tag">Figma</span>
+          <span class="sk-tag">Canva</span>
+          <span class="sk-tag">UI Design</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <span>© 2025 Riska Agus — All rights reserved</span>
+    <a href="#" onclick="showPage('kontak')">Say hello ✨</a>
+  </footer>
+</div>
+
+<!-- ════════════════════════════════════════ -->
+<!--  PAGE: PROJECTS                         -->
+<!-- ════════════════════════════════════════ -->
+<div id="page-projects" class="page">
+  <div class="wrap section">
+    <span class="tag">Portfolio</span>
+    <h1 class="display-title" style="margin-top:16px">
+      Research &amp; <em>Projects</em>
+    </h1>
+    <div class="divider"></div>
+    <p style="color:var(--muted); max-width:520px; line-height:1.8; margin-top:10px; font-size:15px">
+      Kumpulan proyek riset, pengembangan sistem, dan karya engineering yang telah saya kerjakan selama perjalanan akademik dan profesional.
+    </p>
+
+    <div class="projects-grid">
+
+      <!-- featured -->
+      <div class="proj-card featured reveal">
+        <div class="proj-thumb">
+          <div class="proj-thumb-inner t1" style="font-size:72px">🧠</div>
+        </div>
+        <div class="proj-body">
+          <div class="proj-tags">
+            <span class="proj-tag">Featured</span>
+            <span class="proj-tag">Machine Learning</span>
+            <span class="proj-tag">Biomedical</span>
+          </div>
+          <div class="proj-title">Driver Fatigue Detection via HRV on Wearable IoT</div>
+          <div class="proj-desc">
+            Riset Tugas Akhir — Sistem pemantauan kelelahan pengemudi berbasis analisis HRV (Heart Rate Variability) menggunakan algoritma Machine Learning pada platform wearable IoT. Bertujuan meningkatkan keselamatan berkendara melalui deteksi dini kondisi fatigue.
+          </div>
+          <div class="proj-footer">
+            <div class="proj-status"><span class="dot dot-yellow"></span> In Progress — 2025</div>
+            <a href="#" class="proj-link">Detail →</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="proj-card reveal">
+        <div class="proj-thumb">
+          <div class="proj-thumb-inner t2" style="font-size:52px">🌐</div>
+        </div>
+        <div class="proj-body">
+          <div class="proj-tags">
+            <span class="proj-tag">Published</span>
+            <span class="proj-tag">Optical</span>
+          </div>
+          <div class="proj-title">FTTH Network Design &amp; Simulation</div>
+          <div class="proj-desc">
+            Perancangan topologi FTTH menggunakan Google Earth (KML mapping), penyusunan BOQ, dan simulasi parameter jaringan di OptiSystem: link budget, power budget, dispersion, dan total loss.
+          </div>
+          <div class="proj-footer">
+            <div class="proj-status"><span class="dot dot-green"></span> Completed — 2024</div>
+            <a href="#" class="proj-link">Detail →</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="proj-card reveal">
+        <div class="proj-thumb">
+          <div class="proj-thumb-inner t3" style="font-size:52px">📸</div>
+        </div>
+        <div class="proj-body">
+          <div class="proj-tags">
+            <span class="proj-tag">Startup</span>
+            <span class="proj-tag">Full-Stack</span>
+          </div>
+          <div class="proj-title">Motion-Us — Online Photobooth Platform</div>
+          <div class="proj-desc">
+            Co-Founded dan developed platform photobooth digital berbasis web dengan sistem token, integrasi Supabase, dan fitur pemrosesan foto/video untuk pengalaman pengguna optimal.
+          </div>
+          <div class="proj-footer">
+            <div class="proj-status"><span class="dot dot-green"></span> Live — 2025</div>
+            <a href="#" class="proj-link">Visit →</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="proj-card reveal">
+        <div class="proj-thumb">
+          <div class="proj-thumb-inner t4" style="font-size:52px">⚡</div>
+        </div>
+        <div class="proj-body">
+          <div class="proj-tags">
+            <span class="proj-tag">Automation</span>
+            <span class="proj-tag">Excel VBA</span>
+          </div>
+          <div class="proj-title">Lab Reporting Automation System</div>
+          <div class="proj-desc">
+            Pengembangan sistem otomasi reporting hasil pengujian laboratorium menggunakan Microsoft Excel VBA di Telkom Test House — digitalisasi dokumentasi dan efisiensi pemrosesan data.
+          </div>
+          <div class="proj-footer">
+            <div class="proj-status"><span class="dot dot-green"></span> Completed — 2025</div>
+            <a href="#" class="proj-link">Detail →</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="proj-card reveal">
+        <div class="proj-thumb">
+          <div class="proj-thumb-inner t5" style="font-size:52px">📡</div>
+        </div>
+        <div class="proj-body">
+          <div class="proj-tags">
+            <span class="proj-tag">Research</span>
+            <span class="proj-tag">WDM/DWDM</span>
+          </div>
+          <div class="proj-title">Optical Spectrum Analyzer Study &amp; IKA</div>
+          <div class="proj-desc">
+            Analisis prosedur OSA di Telkom Test House, penyusunan Instrument Work Instruction (IKA), dan presentasi teknologi WDM/DWDM berdasarkan standar ITU-T dan ISO 4892-2.
+          </div>
+          <div class="proj-footer">
+            <div class="proj-status"><span class="dot dot-green"></span> Completed — 2025</div>
+            <a href="#" class="proj-link">Detail →</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="proj-card reveal">
+        <div class="proj-thumb">
+          <div class="proj-thumb-inner t6" style="font-size:52px">🔬</div>
+        </div>
+        <div class="proj-body">
+          <div class="proj-tags">
+            <span class="proj-tag">Published</span>
+            <span class="proj-tag">Gen-City 2025</span>
+          </div>
+          <div class="proj-title">Biomedical Signal Processing Research</div>
+          <div class="proj-desc">
+            Penelitian eksperimen biomedical signal processing dengan integrasi algoritma Machine Learning untuk aplikasi kesehatan — accepted di Gen-City 2025 dan ISIBER 2026.
+          </div>
+          <div class="proj-footer">
+            <div class="proj-status"><span class="dot dot-blue"></span> Published — 2025</div>
+            <a href="#" class="proj-link">Paper →</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <footer>
+    <span>© 2025 Riska Agus</span>
+    <a href="#" onclick="showPage('kontak')">Interested in collaborating? ✨</a>
+  </footer>
+</div>
+
+<!-- ════════════════════════════════════════ -->
+<!--  PAGE: SERTIFIKAT                       -->
+<!-- ════════════════════════════════════════ -->
+<div id="page-sertifikat" class="page">
+  <div class="wrap section">
+    <span class="tag">Achievements</span>
+    <h1 class="display-title" style="margin-top:16px">
+      Sertifikat &amp; <em>Penghargaan</em>
+    </h1>
+    <div class="divider"></div>
+    <p style="color:var(--muted); max-width:480px; line-height:1.8; margin-top:10px; font-size:15px">
+      Sertifikasi, pelatihan, dan penghargaan yang mendokumentasikan perjalanan belajar dan pencapaian saya.
+    </p>
+
+    <div class="cert-grid">
+
+      <div class="cert-card reveal">
+        <div class="cert-accent ca-rose"></div>
+        <div class="cert-body">
+          <div class="cert-icon">📰</div>
+          <div class="cert-issuer">Gen-City 2025</div>
+          <div class="cert-title">Accepted Research Paper — Biomedical Signal Processing</div>
+          <div class="cert-date">2025</div>
+          <div class="cert-skill">
+            <span>Machine Learning</span>
+            <span>Signal Processing</span>
+            <span>Publication</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="cert-card reveal">
+        <div class="cert-accent ca-lav"></div>
+        <div class="cert-body">
+          <div class="cert-icon">📰</div>
+          <div class="cert-issuer">ISIBER 2026</div>
+          <div class="cert-title">Accepted Research Paper — Engineering Application</div>
+          <div class="cert-date">2026</div>
+          <div class="cert-skill">
+            <span>Research</span>
+            <span>Engineering</span>
+            <span>International</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="cert-card reveal">
+        <div class="cert-accent ca-teal"></div>
+        <div class="cert-body">
+          <div class="cert-icon">🏭</div>
+          <div class="cert-issuer">Telkom Test House</div>
+          <div class="cert-title">Internship — Energy Laboratory</div>
+          <div class="cert-date">Jun — Aug 2025</div>
+          <div class="cert-skill">
+            <span>Excel VBA</span>
+            <span>Automation</span>
+            <span>Lab Systems</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="cert-card reveal">
+        <div class="cert-accent ca-amber"></div>
+        <div class="cert-body">
+          <div class="cert-icon">🔭</div>
+          <div class="cert-issuer">Telkom Test House</div>
+          <div class="cert-title">Internship — Optical Communication Lab</div>
+          <div class="cert-date">Jan — Feb 2025</div>
+          <div class="cert-skill">
+            <span>Optical Systems</span>
+            <span>WDM/DWDM</span>
+            <span>OSA</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="cert-card reveal">
+        <div class="cert-accent ca-rose"></div>
+        <div class="cert-body">
+          <div class="cert-icon">🌐</div>
+          <div class="cert-issuer">Community Program</div>
+          <div class="cert-title">FTTH Network Design Training</div>
+          <div class="cert-date">2024</div>
+          <div class="cert-skill">
+            <span>FTTH</span>
+            <span>KML Mapping</span>
+            <span>OptiSystem</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="cert-card reveal">
+        <div class="cert-accent ca-lav"></div>
+        <div class="cert-body">
+          <div class="cert-icon">🤖</div>
+          <div class="cert-issuer">Community Program</div>
+          <div class="cert-title">AI in Learning Workshop</div>
+          <div class="cert-date">2024</div>
+          <div class="cert-skill">
+            <span>Artificial Intelligence</span>
+            <span>Education</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Note to add more -->
+    <div style="margin-top:40px; padding:28px; background:rgba(232,160,176,.05); border:1px dashed rgba(232,160,176,.2); border-radius:18px; text-align:center; color:var(--muted); font-size:13px; line-height:1.7;" class="reveal">
+      ✨ Halaman ini dapat diperbarui dengan menambahkan sertifikasi baru.<br>
+      Tambahkan file sertifikat Anda untuk ditampilkan di sini.
+    </div>
+  </div>
+
+  <footer>
+    <span>© 2025 Riska Agus</span>
+    <a href="#" onclick="showPage('kontak')">Contact me ✨</a>
+  </footer>
+</div>
+
+<!-- ════════════════════════════════════════ -->
+<!--  PAGE: KONTAK                           -->
+<!-- ════════════════════════════════════════ -->
+<div id="page-kontak" class="page">
+  <div class="wrap section">
+    <span class="tag">Get in touch</span>
+    <h1 class="display-title" style="margin-top:16px">
+      Mari <em>Terhubung</em>
+    </h1>
+    <div class="divider"></div>
+
+    <div class="contact-split">
+      <div class="contact-info reveal">
+        <p class="contact-lead">
+          Terbuka untuk kolaborasi riset, diskusi teknis, peluang magang, atau sekadar say hello! Jangan ragu untuk menghubungi saya.
+        </p>
+
+        <div class="contact-items">
+          <a href="mailto:riska@example.com" class="contact-item">
+            <div class="ci-icon">📧</div>
+            <div class="ci-info">
+              <div class="ci-label">Email</div>
+              <div class="ci-val">riskaagus@telkomuniversity.ac.id</div>
+            </div>
+            <div class="ci-arrow">→</div>
+          </a>
+
+          <a href="https://linkedin.com" target="_blank" class="contact-item">
+            <div class="ci-icon">💼</div>
+            <div class="ci-info">
+              <div class="ci-label">LinkedIn</div>
+              <div class="ci-val">linkedin.com/in/riskaagus</div>
+            </div>
+            <div class="ci-arrow">→</div>
+          </a>
+
+          
+
+          <div class="contact-item" style="cursor:default">
+            <div class="ci-icon">📍</div>
+            <div class="ci-info">
+              <div class="ci-label">Lokasi</div>
+              <div class="ci-val">Bandung, Jawa Barat, Indonesia</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="social-strip">
+          <a href="#" class="social-btn" title="Instagram">🌸</a>
+          <a href="#" class="social-btn" title="LinkedIn">💼</a>
+          <a href="#" class="social-btn" title="GitHub">🐙</a>
+          <a href="#" class="social-btn" title="Email">📧</a>
+        </div>
+      </div>
+
+      <!-- FORM -->
+      <div class="contact-form reveal">
+        <div class="form-title">Kirim Pesan ✉️</div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label>Nama</label>
+            <input type="text" placeholder="Nama kamu">
+          </div>
+          <div class="form-group">
+            <label>Email</label>
+            <input type="email" placeholder="email@kamu.com">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label>Subject</label>
+          <input type="text" placeholder="Perihal pesan">
+        </div>
+
+        <div class="form-group">
+          <label>Pesan</label>
+          <textarea rows="5" placeholder="Tulis pesanmu di sini..."></textarea>
+        </div>
+
+        <button
+          onclick="handleSubmit(this)"
+          style="all:unset; cursor:none; display:inline-flex; align-items:center; gap:8px; padding:13px 28px; border-radius:999px; background:linear-gradient(135deg,var(--rose2),#9b6080); color:#fff; font-size:13px; letter-spacing:.08em; text-transform:uppercase; transition:all .3s; box-shadow:0 8px 28px rgba(201,125,150,.28);"
+          onmouseover="this.style.transform='translateY(-2px)';this.style.boxShadow='0 12px 36px rgba(201,125,150,.38)'"
+          onmouseout="this.style.transform='';this.style.boxShadow='0 8px 28px rgba(201,125,150,.28)'"
+        >
+          Kirim Pesan ✨
+        </button>
+
+        <div id="form-success" style="display:none; margin-top:16px; padding:14px 18px; background:rgba(110,231,183,.1); border:1px solid rgba(110,231,183,.25); border-radius:12px; color:#6ee7b7; font-size:13px;">
+          ✅ Pesan terkirim! Terima kasih, akan segera dihubungi.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <span>© 2025 Riska Agus — Telkom University</span>
+    <span style="color:var(--rose)">Made with 💕</span>
+  </footer>
+</div>
+
+<!-- ═══ JS ═══ -->
+<script src="script.js"></script>
+</body>
+</html>
